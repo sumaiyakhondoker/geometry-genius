@@ -6,6 +6,14 @@
  * step-4: get value from the input field. (value is string now)
  * step-5: convert the to a number. use parseFloat
  */
+
+document.getElementById('triangle').addEventListener('mouseover', function(){
+    const triangle = document.getElementById('triangle');
+    triangle.style.backgroundColor = 'pink';
+    triangle.addEventListener('mouseout', function(){
+        triangle.style.backgroundColor = 'white';
+    })
+})
 function calculateTriangleArea(){
     // get triangle base value
     const triangleBaseInput = document.getElementById('triangle-base');
